@@ -1,0 +1,16 @@
+{
+  "name": "orion-duck-tape",
+  "version": "0.0.1",
+  "description": "Duct tape for orion to run on a different path",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kris De Volder <kdevolder@pivotal.io>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "orion": "0.0.37"
+  }
+}
