@@ -6,11 +6,18 @@ var path = require('path');
 
 app.get('/ide/defaults.pref', function(req, res) {
   var df = path.join(__dirname, 'resources/defaults.pref');
-  console.log('sending file: "'+df+"'");
   res.sendFile(df);
 });
+app.use('/ide', function(req, res, next) {
+  //orion gets confused if the trailing slash is missing... so...
+  console.log(req);
+  if (req.originalUrl=='/ide') {
+    res.redirect('/ide/');
+  }
+  next();
+});
 
-app.use('/ide', orion({ workspaceDir: process.env.HOME }))
+app.use('/ide/', orion({ workspaceDir: process.env.HOME }))
 
 app.listen(port, function () {
   console.log('Example app listening on port '+port+'!');
