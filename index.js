@@ -12,8 +12,9 @@ app.use('/ide', function(req, res, next) {
   //orion gets confused if the trailing slash is missing... so...
   if (req.originalUrl=='/ide') {
     res.redirect('/ide/');
+  } else {
+    next();
   }
-  next();
 });
 
 app.use('/ide/', orion({ workspaceDir: process.env.HOME }))
