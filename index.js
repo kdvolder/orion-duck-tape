@@ -10,7 +10,6 @@ app.get('/ide/defaults.pref', function(req, res) {
 });
 app.use('/ide', function(req, res, next) {
   //orion gets confused if the trailing slash is missing... so...
-  console.log(req);
   if (req.originalUrl=='/ide') {
     res.redirect('/ide/');
   }
