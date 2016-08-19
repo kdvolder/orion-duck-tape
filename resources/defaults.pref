@@ -1,21 +1,27 @@
 {
-	"/plugins":{
-		"plugins/fileClientPlugin.html":true,
-		"plugins/jslintPlugin.html":true,
-		"edit/content/imageViewerPlugin.html":true,
-		"edit/content/jsonEditorPlugin.html":true,
-		"plugins/webEditingPlugin.html":true,
+	"/plugins": {
+		"plugins/fileClientPlugin.html": true,
+		"plugins/jslintPlugin.html": true,
+		"edit/content/imageViewerPlugin.html": true,
+		"edit/content/jsonEditorPlugin.html": true,
+		"plugins/webEditingPlugin.html": true,
 		"plugins/helpPlugin.html": true,
-		"plugins/languageToolsPlugin.html":true,
-		"plugins/pageLinksPlugin.html":true,
-		"webtools/plugins/webToolsPlugin.html":true,
-		"javascript/plugins/javascriptPlugin.html":true,
-		"shell/plugins/shellPagePlugin.html":true
+		"plugins/languageToolsPlugin.html": true,
+		"plugins/pageLinksPlugin.html": true,
+		"webtools/plugins/webToolsPlugin.html": true,
+		"javascript/plugins/javascriptPlugin.html": true,
+		"shell/plugins/shellPagePlugin.html": true
 	},
-	"/settingsContainer":{
-		"categories":{
-			"showUserSettings":false,
-			"showGitSettings":false
+	"/settingsContainer": {
+		"categories": {
+			"showUserSettings": false,
+			"showGitSettings": false
+		}
+	},
+	"/editor/settings": {
+		"editorSettings": {
+			"autoSave": false,
+			"autoSaveTimeout": 987
 		}
 	}
 }
